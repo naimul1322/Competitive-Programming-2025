@@ -3,30 +3,31 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
+const int mx=1e5+123;
+int a[mx];
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    int a[4][4];
-    for(int i=0; i<4; i++)
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++)
     {
-        for(int j=0; j<4; j++)
-        {
-           cin>>a[i][j];
-        }
-        cout<<endl;
+        cin>>a[i];
     }
+    int mx=a[0];
 
-    for(int i=0; i<4; i++)
+    for(int i=0; i<n; i++)
     {
-        for(int j=0; j<4; j++)
+        if(a[i]!=mx)
         {
-           cout<<a[i][j]<<" ";
+            mx=i;
+            break;
         }
-        cout<<endl;
     }
+    cout<<mx+1<<endl;
 
 
 }

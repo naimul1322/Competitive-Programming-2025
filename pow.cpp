@@ -9,19 +9,17 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-     string s;
-     cin>>s;
-     int len=strlen(s);
-     while(len!='\0')
-     {
-         int a=len%2;
 
+    int a,b;
+    cin>>a>>b;
+    int ans=1;
+    int sum=0;
+    for(int i=1; i<=b; i++)
+    {
+        ans*=a;
 
-     }
-     string tmp;
-     tmp=s;
-     reverse(tmp.begin(),tmp.end());
-
+    }
+    cout<<ans<<endl;
 
 
 

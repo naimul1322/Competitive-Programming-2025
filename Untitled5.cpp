@@ -7,20 +7,27 @@ using namespace std;
 int main()
 {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
 
-    int t;
-    cin>>t;
-    while(t--)
+    int x,y;
+    while(cin>>x>>y;)
     {
-        int a,b,c;
-        cin>>a>>b>>c;
-        if((a+b==c)|| (b+c)==a || (c+a==b))
+
+        if(x<=0 || y<=0) break;
+        int sum=0;
+        if(x>y)
         {
-            cout<<"YES"<<endl;
+            swap(x,y);
         }
-        else cout<<"NO"<<endl;
+        for(int i=x; i<=y; i++)
+        {
+            cout<<i<<" ";
+            sum+=i;
+        }
+        cout<<"SUM="<<sum<<endl;
+
     }
 
 

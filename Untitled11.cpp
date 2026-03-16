@@ -9,20 +9,20 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-     string s;
-     cin>>s;
-     int len=strlen(s);
-     while(len!='\0')
-     {
-         int a=len%2;
+    int x,n;
+    cin>>x>>n;
+    int ans=1;
+    int sum=0;
+    for(int i=0; i<n; i++)
+    {
+        if(i%2==0)
+        {
+            ans*=x;
 
+        }
 
-     }
-     string tmp;
-     tmp=s;
-     reverse(tmp.begin(),tmp.end());
-
-
+    }
+    cout<<ans<<endl;
 
 
 }

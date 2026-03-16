@@ -4,25 +4,20 @@
 using namespace std;
 #define endl "\n"
 
+int fibo(int n)
+{
+    if(n==0 || n==1) return n;
+    else  return  n+fibo(n-1);
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-     string s;
-     cin>>s;
-     int len=strlen(s);
-     while(len!='\0')
-     {
-         int a=len%2;
-
-
-     }
-     string tmp;
-     tmp=s;
-     reverse(tmp.begin(),tmp.end());
-
-
+    int n;
+    cin>>n;
+    cout<<fibo(n)<<endl;
 
 
 }

@@ -9,19 +9,13 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-     string s;
-     cin>>s;
-     int len=strlen(s);
-     while(len!='\0')
-     {
-         int a=len%2;
-
-
-     }
-     string tmp;
-     tmp=s;
-     reverse(tmp.begin(),tmp.end());
-
+    long long n,k,a;
+    cin>>n>>k>>a;
+    long long ans=(n*k)/a;
+    double x=(double)(n*k)/a;
+    if(ans<100000000) cout<<"int"<<endl;
+    else cout<<"long long"<<endl;
+    //cout<<"double"<<endl;
 
 
 

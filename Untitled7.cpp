@@ -8,29 +8,29 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
-    //cout<<fixed<<setprecision(2);
-  int t;
-  cin>>t;
-  while(t--)
-  {
-      int k;
-      cin>>k;
-      int cnt=0;
-      for(int i=1; ; i++)
-      {
-          if(i%3==0 || i%10==3){
-            continue;
-          }
-          cnt++;
-          if(cnt==k)
-          {
-              cout<<i<<endl;
-              break;
-          }
+    cout<<fixed<<setprecision(2);
 
-      }
+   float score1 = -1, score2 = -1;
+   float input;
+   while(1)
+   {
+       cin >> input;
+        if (input >= 0 && input <= 10) {
+            if (score1 == -1) {
+                score1 = input;
+            } else {
+                score2 = input;
+                break;
+        }
+        }
+         else {
+            cout << "nota invalida" << endl;
 
-  }
+   }
+   float average = (score1 + score2) / 2;
+    cout << "media = " << average << endl;
 
+
+}
 }
 
