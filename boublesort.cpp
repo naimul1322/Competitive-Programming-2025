@@ -14,17 +14,25 @@ int main()
     //memset(dp,-1,sizeof(dp));
      int n;
      cin>>n;
-     vector<int> v(n);
-     map<int,int> cnt;
+     int a[n+1];
+     for(int i=0; i<n; i++) cin>>a[i];
+
      for(int i=0; i<n; i++)
      {
-         cin>>v[i];
-         cnt[v[i]]++;
+         for(int j=0; j<n-i-1; j++)
+         {
+             if(a[j]>a[j+1])
+             {
+
+             swap(a[j],a[j+1]);
+             }
+         }
      }
-     int mx=INT_MIN;
-     for(auto u: cnt)
+     for(int i=0; i<n; i++)
      {
-         mx=max(mx,u.first);
+         cout<<a[i]<<" ";
      }
-    cout<<mx<<endl;
+     cout<<endl;
+
 }
+

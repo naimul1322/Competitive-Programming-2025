@@ -12,19 +12,7 @@ int main()
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
     //memset(dp,-1,sizeof(dp));
-     int n;
-     cin>>n;
-     vector<int> v(n);
-     map<int,int> cnt;
-     for(int i=0; i<n; i++)
-     {
-         cin>>v[i];
-         cnt[v[i]]++;
-     }
-     int mx=INT_MIN;
-     for(auto u: cnt)
-     {
-         mx=max(mx,u.first);
-     }
-    cout<<mx<<endl;
+
+
 }
+

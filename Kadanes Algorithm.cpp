@@ -14,17 +14,21 @@ int main()
     //memset(dp,-1,sizeof(dp));
      int n;
      cin>>n;
-     vector<int> v(n);
-     map<int,int> cnt;
+     int a[n+1];
+     for(int i=0; i<n; i++) cin>>a[i];
+
+     int csum=0;
+     int mx=INT_MIN;
      for(int i=0; i<n; i++)
      {
-         cin>>v[i];
-         cnt[v[i]]++;
+         csum+=a[i];
+         mx=max(csum,mx);
+         if(csum<0)
+         {
+             csum=0;
+         }
      }
-     int mx=INT_MIN;
-     for(auto u: cnt)
-     {
-         mx=max(mx,u.first);
-     }
-    cout<<mx<<endl;
+     cout<<mx<<endl;
+
 }
+
