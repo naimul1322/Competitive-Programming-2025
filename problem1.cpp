@@ -10,18 +10,18 @@ int main()
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
 
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        int a,b,c;
-        cin>>a>>b>>c;
-        if((a+b==c)|| (b+c)==a || (c+a==b))
-        {
-            cout<<"YES"<<endl;
-        }
-        else cout<<"NO"<<endl;
-    }
+   int n,a,b,x;
+   cin>>n>>a>>b>>x;
+   if(a<b)
+   {
+       if(a<=x && x<=b) cout<<"YES"<<endl;
+       else cout<<"NO"<<endl;
+   }
+   else
+   {
+       if(b<=x && x<=a) cout<<"YES"<<endl;
+       else cout<<"NO"<<endl;
+   }
 
 
 }

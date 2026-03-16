@@ -11,11 +11,7 @@ int main()
     //cout<<fixed<<setprecision(2);
     int l,r;
     cin>>l>>r;
-    l--,r--;
-    string s;
-    cin>>s;
-    reverse(s.begin()+l,s.begin()+r+1);
-    cout<<s<<endl;
+
 
 
 }

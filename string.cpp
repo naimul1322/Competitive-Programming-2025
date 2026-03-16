@@ -9,13 +9,16 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    int l,r;
-    cin>>l>>r;
-    l--,r--;
-    string s;
-    cin>>s;
-    reverse(s.begin()+l,s.begin()+r+1);
-    cout<<s<<endl;
+//
+//    int a;
+//    cin>>a;
+//    char ans=(char)a+97;
+//    cout<<ans<<endl;
+
+//      char c;
+//      cin>>c;
+//      int ans= (int)c-'a';
+//      cout<<ans<<endl;
 
 
 }

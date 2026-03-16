@@ -11,22 +11,15 @@ int main()
     //cout<<fixed<<setprecision(2);
     int n;
     cin>>n;
-    int a[n+1];
-    int f[n+1]={};
-    for(int i=0; i<4*n-1; i++)
+    while(n--)
     {
-        cin>>a[i];
-        f[a[i]]++;
+        long long a,b;
+        cin>>a>>b;
+
     }
-    int ans;
-    for(int i=0; i<4*n-1; i++)
-    {
-        if(f[i]==3){
-            ans=i;
-            break;
-        }
-    }
-    cout<<ans<<endl;
+
+
+
 
 
 }

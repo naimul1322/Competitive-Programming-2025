@@ -3,28 +3,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-const int mx=1e5+123;
-long long a[mx];
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
+    int a[4][4];
+    for(int i=0; i<4; i++)
+    {
+        for(int j=0; j<4; j++)
+        {
+           cin>>a[i][j];
+        }
+        cout<<endl;
+    }
 
-    int n;
-    cin>>n;
-    for(int i=0; i<n; i++)
+    for(int i=0; i<4; i++)
     {
-        cin>>a[i];
+        for(int j=0; j<4; j++)
+        {
+           cout<<a[i][j]<<" ";
+        }
+        cout<<endl;
     }
-    int ans=a[0];
-    for(int i=0; i<n-1; i++)
-    {
-        if(a[i]<a[i+1]) ans=a[i+1];
-        else break;
-    }
-    cout<<ans<<endl;
 
 
 }

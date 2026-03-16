@@ -9,24 +9,16 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-     int n;
-     cin>>n;
-     int a[n*4-1],f[n+1]={};
-     for(int i=0; i<4*n-1; i++)
-     {
-         cin>>a[i];
-         f[a[i]]++;
-     }
-     int ans;
-     for(int i=1; i<=n; i++)
-     {
-         if(f[i]==3)
-         {
-             ans=i;
-             break;
-         }
-     }
-     cout<<ans<<endl;
+
+    char  ch[100];
+    cin>>ch;
+    int n=strlen(ch);
+    int sum=0;
+    for(int i=0; i<n; i++)
+    {
+        sum+=(int)ch[i]-'0';
+    }
+    cout<<sum<<endl;
 
 }
 

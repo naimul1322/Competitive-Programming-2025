@@ -9,24 +9,22 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    int n;
-    cin>>n;
-    int a[n+1];
-    int f[n+1]={};
-    for(int i=0; i<4*n-1; i++)
+    long long a,b,k;
+    cin>>a>>b>>k;
+    if(k<=a)
     {
-        cin>>a[i];
-        f[a[i]]++;
+        cout<<k-a<<" "<<b<<endl;
     }
-    int ans;
-    for(int i=0; i<4*n-1; i++)
+    else
     {
-        if(f[i]==3){
-            ans=i;
-            break;
+        k=k-a;
+        if(k<=b)
+        {
+            cout<<0<<" "<<b-k<<endl;
+
         }
+        else cout<<0<<" "<<0<<endl;
     }
-    cout<<ans<<endl;
 
 
 }

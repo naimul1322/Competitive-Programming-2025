@@ -9,13 +9,12 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    int l,r;
-    cin>>l>>r;
-    l--,r--;
     string s;
     cin>>s;
-    reverse(s.begin()+l,s.begin()+r+1);
-    cout<<s<<endl;
+    string tmp=s;
+    reverse(tmp.begin(),tmp.end());
+    if(tmp==s) cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
 
 
 }

@@ -9,13 +9,17 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    int l,r;
-    cin>>l>>r;
-    l--,r--;
-    string s;
-    cin>>s;
-    reverse(s.begin()+l,s.begin()+r+1);
-    cout<<s<<endl;
+    int n ;
+    cin>>n;
+    int cnt=0;
+    for(int i=1; i<=n; i++)
+    {
+        if(n%i==0) cout<<i<<" ",cnt++;
+
+    }
+
+    cout<<endl;
+    cout<<cnt<<endl;
 
 
 }
