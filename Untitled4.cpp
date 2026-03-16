@@ -9,14 +9,24 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    string s;
-    cin>>s;
-    sort(s.begin(),s.end());
-    int sz=unique(s.begin(),s.end(),s.begin());
-    for(int i=0; i<sz; i++)
+    map<string ,int> mp;
+    vector<string> s;
+    //cin>>s;
+    stringstream ss(s);
+    string word;
+    while(ss>>word)
     {
-        if(s[i]=="hello") cout<<"YES"<<endl;
-        else cout<<"NO"<<endl;
+        s.push_back(word);
+        mp[word]++;
+    }
+    string res=words[0];
+    int mx=mp[res];
+    for(auto u: s)
+    {
+        if(mp[u]>mx){
+            res=u;
+            mx=mp[u];
+        }
     }
 
 
