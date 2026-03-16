@@ -3,28 +3,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-#define MOD 1000000007
-
 
 int main()
 {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
     //cout<<fixed<<setprecision(2);
-    //memset(dp,-1,sizeof(dp));
-     int n;
-     cin>>n;
-     vector<int> v(n);
-     map<int,int> cnt;
-     for(int i=0; i<n; i++)
-     {
-         cin>>v[i];
-         cnt[v[i]]++;
-     }
-     int mx=INT_MIN;
-     for(auto u: cnt)
-     {
-         mx=max(mx,u.first);
-     }
-    cout<<mx<<endl;
+    int tc;
+    cin>>tc;
+    while(tc--)
+    {
+
+        int x,y;
+        cin>>x>>y;
+        if(x+1>=y && (x+1-y)%9==0)
+        {
+            cout<<"Yes"<<endl;
+        }
+        else cout<<"No"<<endl;
+
+    }
+
+
 }
+
